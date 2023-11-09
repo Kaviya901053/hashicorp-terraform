@@ -7,6 +7,7 @@ provider "aws" {
 
 data "aws_ami" "ubuntu" {
   most_recent = true
+  owners = ["691879165105"]
 }
 
 resource "aws_instance" "ubuntu" {
